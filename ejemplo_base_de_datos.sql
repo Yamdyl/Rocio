@@ -25,9 +25,9 @@ CREATE TABLE tareas (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
--- Datos de prueba
+-- Datos de prueba iniciales
 INSERT INTO usuarios (nombre, email) 
 VALUES ('Rocío', 'rocio@email.com');
 
 INSERT INTO tareas (titulo, descripcion, usuario_id) 
-VALUES ('Crear archivo en GitHub', 'Subir la base de datos al repositorio', 1);
+VALUES ('Diseñar interfaz', 'Crear el formulario inicial de la aplicación', 1);
